@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <h1>这是一个选项卡<span>2022-09-01</span></h1>
+  <ul class="tabs" role="tablist">
+    <li>
+      <input type="radio" name="tabs" id="tab1" checked>
+      <!-- todo -->
+      <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">My love</label>
+      <div id="tab-content1" class="tab-content" role="tabpanel" aria-describedby="myLove" aria-hidden="false">
+        <p>hebe,anya,cyndi</p>
+      </div>
+    </li>
+
+    <li>
+      <input type="radio" name="tabs" id="tab2">
+      <!-- todo -->
+      <label for="tab2" role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">心情</label>
+      <div id="tab-content2" class="tab-content" role="tabpanel" aria-describedby="mood" aria-hidden="true">
+        <p>九月第一天，上证指数就是绿的！昨天更是让我见识到了，一口气跌9个点！涨的时候不见涨这么多，跌起来就根本停不下来！该死的疫情，只要你严重一点，a股就像一个脱缰的野马，发疯似的往下跑，一点底线都没有！</p>
+      </div>
+    </li>
+  </ul>
+  <!-- todo -->
+  <br style="clear: both;">
+  <p class="link">选项卡<a href="https://codepen.io/wallaceerick/pen/nRyxPz">demo</a></p>
+</body>
+</html>
