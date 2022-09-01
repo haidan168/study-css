@@ -1,0 +1,67 @@
+:root{
+  --background-gradient: linear-gradient(30deg, #3de6c4 30%, #1990bc);
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background: var(--background-gradient);
+}
+
+.select{
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 360px;
+  height: 30px;
+  color: #333;
+  background-color: rgb(28, 87, 108,0.3);
+  cursor: pointer;
+}
+.select p{
+  margin: 0;
+  padding: 0 10px;
+}
+
+.select p::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 30px;
+  background-color: rgb(28, 87, 108,0.3);
+}
+
+.select p::after{
+  content: '\25BC';
+  position: absolute;
+  right: 10px;
+  color: #cdcdcd;;
+  transition: all 0.25s ease-in-out;
+}
+
+.select:hover p::after{
+  color: #3de6c4;
+}
+
+.select-options{
+  position: absolute;
+  top: 30px;
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.select-options li {
+  padding: 5px 10px;
+  background-color: rgb(28, 87, 108,0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.select-options li:hover{
+  color: #cdcdcd;
+  background-color: rgba(20, 23, 43, 0.3);
+}
