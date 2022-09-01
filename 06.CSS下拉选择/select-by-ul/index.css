@@ -21,6 +21,7 @@ body{
 .select p{
   margin: 0;
   padding: 0 10px;
+  cursor: text;
 }
 
 .select p::before{
@@ -31,14 +32,16 @@ body{
   width: 36px;
   height: 30px;
   background-color: rgb(28, 87, 108,0.3);
+  pointer-events: none;
 }
 
 .select p::after{
   content: '\25BC';
   position: absolute;
   right: 10px;
-  color: #cdcdcd;;
+  color: #cdcdcd;
   transition: all 0.25s ease-in-out;
+  pointer-events: none;
 }
 
 .select:hover p::after{
@@ -53,6 +56,8 @@ body{
   width: 360px;
   list-style: none;
   overflow: hidden;
+  display: none;
+  transition: all 0.3s ease-in;
 }
 
 .select-options li {
