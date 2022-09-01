@@ -1,0 +1,82 @@
+/* todo */
+:root{
+  --background-gradient:
+  linear-gradient(30deg, #f39c12 30%, #f1c40f);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+  height: 100vh;
+}
+
+/* todo */
+select{
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  font-size: 1.2em;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  /* background-color: var(--darkgray);
+  background-image: none; */
+  z-index: 1;
+  /* background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center/1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em); */
+  background-color: rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+/* todo */
+select::-ms-expand {
+  display: none;
+}
+
+select option {
+  color: inherit;
+  background-color: #916623;
+}
+
+select:focus {
+  outline: none;
+}
+
+.select{
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.select::before{
+  content: '';
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.25);
+}
+
+.select::after{
+  /* todo */
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding: 1em;
+  color: rgba(255,255,255,0.9);
+  transition: all 0.25s ease;
+  /* todo */
+  pointer-events: none;
+}
+.select:hover::after{
+  color: #f39c12;
+}
+
+body{
+  width: 100%;
+  color: #fff;
+  background: var(--background-gradient);
+}
