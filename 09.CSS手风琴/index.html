@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <h1>这是一个手风琴<a href="https://codepen.io/raubaca/pen/PZzpVe" target="_blank">demo</a></h1>
+  <div class="row">
+    <div class="col">
+      <h2>可以打开多个</h2>
+      <div class="tabs">
+        <div class="tab">
+          <input type="checkbox" id="tab1">
+          <label for="tab1" class="tab-label">Item1</label>
+          <div class="tab-content">hebe</div>
+        </div>
+        <div class="tab">
+          <input type="checkbox" id="tab2">
+          <label for="tab2" class="tab-label">Item2</label>
+          <div class="tab-content">anya</div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h2>只能打开一个</h2>
+      <div class="tabs">
+        <div class="tab">
+          <input type="radio" name="rd" id="tab3">
+          <label for="tab3" class="tab-label">Item3</label>
+          <div class="tab-content">hebe</div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="rd" id="tab4">
+          <label for="tab4" class="tab-label">Item4</label>
+          <div class="tab-content">anya</div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="rd" id="tab5">
+          <label for="tab5" class="tab-close">close all &times;</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
