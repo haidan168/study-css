@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #23232a;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 40% 0;
+}
+.container {
+  padding: 0.8rem;
+  background: black;
+  height: 95vh;
+  min-height: 500px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 2.5vh;
+  border: 1px solid #c9b473;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 0.3fr 1fr;
+  grid-template-rows: 20% 40% 20% 20%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "A B B C"
+    "D F F F"
+    "E F F F"
+    "E H G G";
+}
+
+.A img,
+.B img,
+.C img {
+  width: 120%;
+  height: 120%;
+}
+
+.A {
+  grid-area: A;
+  background-color: antiquewhite;
+  clip-path: polygon(0% 0%, 93.24% 0%, 105.04% 110.16%, 0% 90%);
+}
+
+.B {
+  grid-area: B;
+  background-color: rgb(170, 128, 73);
+  clip-path: polygon(0% 0%, 108.28% 0%, 96.45% 110.13%, 10.55% 110.93%);
+}
+
+.C {
+  grid-area: C;
+  background-color: rgb(129, 186, 222);
+  clip-path: polygon(15.05% 0%, 100% 0%, 99.35% 91.7%, 3.08% 108.48%);
+}
+
+.D {
+  grid-area: D;
+  background-color: rgb(103, 152, 70);
+  clip-path: polygon(
+    0% -0.85%,
+    106.34% 9.98%,
+    121.32% 65.63%,
+    99.66% 109.89%,
+    1.86% 124.41%
+  );
+}
+.D img {
+  width: 135%;
+  height: 135%;
+}
+
+.E {
+  grid-area: E;
+  background-color: rgb(70, 79, 26);
+  clip-path: polygon(2.14% 29.3%, 99.34% 15.42%, 98.14% 100.82%, 1.57% 101.2%);
+}
+
+.G {
+  grid-area: G;
+  background-color: rgb(116, 94, 66);
+  clip-path: polygon(2.5% 22.35%, 100% 0%, 100% 100%, 1.55% 100%);
+}
+
+.H {
+  grid-area: H;
+  background-color: rgb(167, 61, 166);
+  clip-path: polygon(7.92% 33.47%, 96.31% 23.39%, 95.38% 100%, 5.3% 100.85%);
+}
+
+.F {
+  grid-area: F;
+  background-color: rgb(90, 161, 169);
+  clip-path: polygon(
+    6.4% 6.48%,
+    47.24% 5.89%,
+    100% 0%,
+    98.41% 96.85%,
+    53.37% 100%,
+    53% 63.21%,
+    3.23% 73.02%,
+    14.3% 44.04%
+  );
+}
+
+.I {
+  grid-area: F;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: rgb(90, 169, 95);
+  clip-path: polygon(
+    5.94% 28.66%,
+    100.61% -0.67%,
+    101.1% 108.57%,
+    5.4% 126.28%
+  );
+}
+.I img {
+  object-position: 30% 50%;
+  height: 135%;
+}
