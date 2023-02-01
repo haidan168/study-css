@@ -9,6 +9,8 @@
 }
 
 .center {
+  /* 设置或检索弹性盒模型对象的子元素出现的順序 */
+  order: 2;
   flex: 1;
   background-color: #aaa;
 }
@@ -16,4 +18,10 @@
   /* 第一个值是放大的比例，第二个值是缩小的比列，第三个值是大小 */
   flex: 0 0 200px;
   background-color: aquamarine;
+}
+.left {
+  order: 1;
+}
+.right {
+  order: 3;
 }
